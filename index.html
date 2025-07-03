@@ -1,26 +1,63 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
 
-export default function Header() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Farhan</Text>
-      <Text style={styles.subtitle}>AI Master's Student | React Native Developer</Text>
-    </View>
-  );
-}
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    paddingTop: 50,
-  },
-  title: {
-    fontSize: 30,
-    fontWeight: 'bold',
-  },
-  subtitle: {
-    fontSize: 16,
-    color: 'gray',
-  },
-});
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0d141c]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_330)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_330"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">Alex</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">About</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Projects</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Resume</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Contact</a>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpzmArm-BFUiGXrA6y5ppkzIw3FcVE_YBVv5w3PC4hlb3oWGXg_gt_A4UPX3SZSSapMGSFfZY2VOevZvudSJauOGvc5l2KPCs2khG5c8KBRfpVBmkilkQJGGFFXy7Zz8ZQon6yiLrqdDBJP1JssDoyJ6wQ1zK22ABBbGOTnNkao3O5Be_7EuJygLAIt3SSYjbByGIyVtCXFh0bPI3F4OkgnALl6LD_7SbKLdbzYv28ew347xchvzV3z3RfKhweLZICpC_isZqz26Mc");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <h1 class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">Hi, I'm Alex</h1>
+            <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              I'm a Software Engineering student at Stanford University, specializing in Artificial Intelligence. I'm passionate about building innovative software solutions and
+              exploring the potential of AI to solve real-world problems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
