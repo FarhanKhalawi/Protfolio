@@ -1,28 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f4f4f4;
-    }
-    h1 {
-      color: #333;
-    }
-    p {
-      font-size: 18px;
-    }
-  </style>
-</head>
-<body>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
 
-  <h1>Hello, I'm a Software Engineering Student</h1>
-  <p>I also study Artificial Intelligence (AI).</p>
-  <p>Welcome to my portfolio website!</p>
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-</body>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0d141c]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_319)">
+                  <path
+                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">About</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Projects</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Resume</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Contact</a>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7imS6UsDazG8ZpVd9ut0oAX5AaLJwoYWlwmd00mXJ_l1Zp7Jlc8nuSgcYxSxufOBfGrK7aeNWScTUKNUgsz611G_i7ri1awAqaersRCxH16ky94gA6l2Z08W9F4f7SDMRLhiJspIJBFHAEBxBYsO-VETX5Au_m27qAYP8TQNGkTxvSoEUXL05LBHfhJ_6Sd4N3M000tNkISY_W_iSa3GGJCvejcu3bxVcikWWaXUakEf30llNPGjCrW-2JaOWrurmSuPsWEQLiqGz");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight min-w-72">About Me</p></div>
+            <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              I'm a Software Engineering student at a leading technical university, with a deep passion for Artificial Intelligence. My coursework focuses on machine learning,
+              neural networks, and intelligent systems. I'm eager to apply my skills to create innovative AI solutions.
+            </p>
+            <h3 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Background</h3>
+            <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              I've always been fascinated by the potential of AI to solve complex problems. My journey began with exploring basic programming concepts, which led me to pursue a
+              degree in Software Engineering. I'm particularly interested in the ethical implications of AI and strive to develop responsible and beneficial technologies.
+            </p>
+            <h3 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Current Studies</h3>
+            <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              My current studies involve a blend of theoretical knowledge and practical application. I'm involved in several projects that leverage AI techniques, including a
+              machine learning model for predictive analytics and a neural network for image recognition. I'm also actively seeking opportunities to collaborate on cutting-edge AI
+              research.
+            </p>
+            <h3 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Interests</h3>
+            <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Beyond my academic pursuits, I enjoy staying updated on the latest advancements in AI. I'm an avid reader of research papers and actively participate in online
+              communities focused on AI and machine learning. I'm also exploring the intersection of AI with other fields, such as robotics and natural language processing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
