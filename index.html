@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Farhan Khalawi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Farhan Khalawi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/farhan_p.jpg" alt="Farhan Khalawi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Farhan Khalawi</h1>
+        <p class="section__text__p2">AI master's student</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/CV_Farhan.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <a href="https://linkedin.com/in/farhan-khalawi-13aab9266" target="_blank" rel="noopener noreferrer">
+               <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+          </a>
+          <a href="https://github.com/FarhanKhalawi" target="_blank" rel="noopener noreferrer">
+               <img src="./assets/github.png" alt="My GitHub profile" class="icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/farhan_p.jpg" alt="Profile picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+              <h3>Experience</h3>
+              <p>Development</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon"/>
+              <h3>Education</h3>
+              <p>M.Sc. AI (in progress)<br/>B.Sc. Software Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Recent graduate in Software Engineering and current Master's student in Artificial Intelligence at the University of Agder.
+              Passionate about technology, application development, and machine learning.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'"/>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Engineering Studies</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" class="icon"/><div><h3>C / C++ / C#</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon"/><div><h3>React Native</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon"/><div><h3>HTML / CSS / JavaScript</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon"/><div><h3>Web / App Development</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon"/><div><h3>SQL / Neo4j / MongoDB</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon"/><div><h3>Software Design / Architecture</h3></div></article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Artificial Intelligence Studies</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" class="icon"/><div><h3>Machine Learning</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon"/><div><h3>Deep Learning</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon"/><div><h3>Neural Networks (CNNs, RNNs, Transformers)</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon"/><div><h3>Reinforcement Learning</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon"/><div><h3>Computer Vision</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon"/><div><h3>Data Science with Python</h3></div></article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='#projects'"/>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <!-- Project One -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/FishAi.png" alt="Project 1" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <a href="https://github.com/FarhanKhalawi/FishAi" target="_blank" rel="noopener noreferrer">
+                 <button class="btn btn-color-2 project-btn">Github</button>
+              </a>
+              <button class="btn btn-color-2 project-btn" onclick="openVideo('Demo.mp4')">
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Two -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/RoadCrack.png" alt="Project 2" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <a href="https://github.com/FarhanKhalawi/Road-crack-reporting-mobile-application" target="_blank" rel="noopener noreferrer">
+                 <button class="btn btn-color-2 project-btn">Github</button>
+              </a>
+              <button class="btn btn-color-2 project-btn" onclick="openVideo('Demo2.mp4')">
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Three -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/gaze-tracking.png" alt="Project 3" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <a href="https://github.com/FarhanKhalawi/Gaze-tracking" target="_blank" rel="noopener noreferrer">
+                 <button class="btn btn-color-2 project-btn">Github</button>
+              </a>
+              <button class="btn btn-color-2 project-btn" onclick="openVideo('Demo3-gaze-tracking.mp4')">Live Demo</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+        <!-- Projects -->
+    <section id="projects">
+      
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <!-- Project Four -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/Intelligent-data-manegment.png" alt="Project 4" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Project Four</h2>
+            <div class="btn-container">
+              <a href="https://github.com/FarhanKhalawi/Intelligent-Data-Management" target="_blank" rel="noopener noreferrer">
+                 <button class="btn btn-color-2 project-btn">Github</button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Five -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/Reinforcement Learning.png" alt="Project 5" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Project Five</h2>
+            <div class="btn-container">
+              <a href="https://github.com/FarhanKhalawi/Reinforcement-learning" target="_blank" rel="noopener noreferrer">
+                 <button class="btn btn-color-2 project-btn">Github</button>
+              </a>
+              
+            </div>
+          </div>
+
+          <!-- Project Six -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/empty-project.png" alt="Project 6" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Project Six</h2>
+            <div class="btn-container">
+               <button class="btn btn-color-2 project-btn">Github</button>
+              <button class="btn btn-color-2 project-btn" >Live Demo</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+          <p><a href="mailto:farhankhalawi20@gmail.com">farhankhalawi20@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+          <p><a href="http://linkedin.com/in/farhan-khalawi-13aab9266">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Farhan Khalawi © 2025 – Personal Portfolio</p>
+    </footer>
+
+    <!-- Video Modal (reused for any demo) -->
+    <div id="video-modal" role="dialog" aria-modal="true" aria-label="Project Demo Video"
+         style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:1000;align-items:center;justify-content:center;padding:16px;">
+      <div class="modal-body" style="background:#fff;border-radius:12px;padding:12px;max-width:900px;width:90%;max-height:90vh;overflow:auto;">
+        <button class="close-btn" onclick="closeVideo()"
+                style="margin-bottom:8px;border:none;background:#eee;padding:6px 10px;border-radius:8px;cursor:pointer;font-weight:600;">
+          Close ✕
+        </button>
+        <video id="demo-video" controls preload="metadata"
+               style="width:100%;max-height:70vh;object-fit:contain;border-radius:8px;">
+          <!-- src will be set from JS -->
+          <source id="demo-source" src="" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      // Open modal and play a chosen file (e.g., 'Demo.mp4' or 'Demo2.mp4')
+      function openVideo(filename) {
+        const modal = document.getElementById('video-modal');
+        const video = document.getElementById('demo-video');
+        const source = document.getElementById('demo-source');
+
+        // set video source dynamically
+        source.setAttribute('src', './' + filename);
+        video.load();                 // reload video element to use new source
+        modal.style.display = 'flex';
+        video.currentTime = 0;
+        video.play().catch(()=>{});   // autoplay may be blocked; user can press play
+      }
+
+      function closeVideo() {
+        const modal = document.getElementById('video-modal');
+        const video = document.getElementById('demo-video');
+        video.pause();
+        modal.style.display = 'none';
+      }
+
+      function toggleMenu() {
+        const menu = document.querySelector('#hamburger-nav .menu-links');
+        const icon = document.querySelector('#hamburger-nav .hamburger-icon');
+        menu.classList.toggle('open');
+        icon.classList.toggle('open');
+      }
+    </script>
+  </body>
+</html>
